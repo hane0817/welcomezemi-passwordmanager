@@ -26,4 +26,3 @@ def store_password(password, user_mail, username, url, app_name):
 #     try:
 
 #     except (Exception, psycopg2.Error) as error:
-#         print(error)
