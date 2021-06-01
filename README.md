@@ -1,3 +1,11 @@
 # welcomezemi-passwordmanager
 
-dd7e2c4ba2d281deb72511a67b864a26f12749a0
+# Jin のブランチ
+
+# add -> これ追跡して
+
+# commit -> この変化して部分セーブして
+
+# push ->　セーブしたやつ反映してー
+
+# merge ->　反映を許可しよう
