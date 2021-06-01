@@ -1,2 +1,3 @@
 # welcomezemi-passwordmanager
-追加情報
+
+dd7e2c4ba2d281deb72511a67b864a26f12749a0
