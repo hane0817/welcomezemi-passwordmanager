@@ -14,25 +14,20 @@ def menu():
 
 
 def create():
-    print('Please proivide the name of the site or app you want to generate a password for')
+    print('アプリやサイトの名前')
     app_name = input()
-    print('Please provide a \'sample\' password for this site')
+    print('パスワード')
     plaintext = input()
-
     passw = encpass(plaintext)
     print(passw)
 
-    print('-'*30)
-    print('')
-    print('')
-    print('-' * 30)
-    user_email = input('Please provide a user email for this app or site')
+    user_email = input('メールアドレス')
     username = input(
-        'Please provide a username for this app or site (if applicable)')
+        'ユーザネーム（なければっ空白）')
     if username == None:
         username = ''
     url = input(
-        'Please paste the url to the site that you are creating the password for')
+        'サイトのURL（なければ空白）')
     store_password(passw, user_email, username, url, app_name)
 
 

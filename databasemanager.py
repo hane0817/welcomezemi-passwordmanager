@@ -34,8 +34,8 @@ def find_password(app_name):
         result = cursor.fetchone()
         print('password is: ')
         print(result[0])
-        afterdec = decpass(result[0])
-        print(afterdec)
+        # afterdec = decpass(result[0])
+        # print(afterdec)
     except (Exception, psycopg2.Error) as error:
         print(error)
 
@@ -51,9 +51,9 @@ def encpass(plaintext):
         print(error)
 
 
-def decpass(encText):
-    try:
-        passw = encpass.fernet.decrypt(encText).decode()
-        return passw
-    except (Exception, psycopg2.Error) as error:
-        print(error)
+# def decpass(encText):
+#     try:
+#         passw = encpass.fernet.decrypt(encText).decode()
+#         return passw
+#     except (Exception, psycopg2.Error) as error:
+#         print(error)
