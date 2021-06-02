@@ -1,5 +1,5 @@
 
-from databasemanager import store_password
+from databasemanager import store_password, find_password, encpass
 
 
 def menu():
@@ -17,7 +17,11 @@ def create():
     print('Please proivide the name of the site or app you want to generate a password for')
     app_name = input()
     print('Please provide a \'sample\' password for this site')
-    passw = input()
+    plaintext = input()
+
+    passw = encpass(plaintext)
+    print(passw)
+
     print('-'*30)
     print('')
     print('')
@@ -30,3 +34,9 @@ def create():
     url = input(
         'Please paste the url to the site that you are creating the password for')
     store_password(passw, user_email, username, url, app_name)
+
+
+def find_app():
+    print('provide app name:')
+    app_name = input()
+    find_password(app_name)
